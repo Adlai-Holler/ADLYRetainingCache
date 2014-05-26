@@ -44,6 +44,26 @@
     DID_ACCESS_DATA;
 }
 
+- (void)releaseAllObjects {
+    WILL_ACCESS_DATA;
+    for (id retainedKey in _retainedPairs) {
+        id retainedObject = [_retainedPairs objectForKey:retainedKey];
+        [super setObject:retainedObject forKey:retainedKey];
+    }
+    [_retainedPairs removeAllObjects];
+    [_retentionKeys removeAllObjects];
+    DID_ACCESS_DATA;
+}
+
+- (void)releaseAllObjectsWithRetentionKey:(id)retentionKey {
+    NSParameterAssert(retentionKey != nil);
+    WILL_ACCESS_DATA;
+    for (id retainedKey in [_retainedPairs copy]) {
+        [self _releaseKey:retainedKey withRetentionKey:retentionKey lock:NO];
+    }
+    DID_ACCESS_DATA;
+}
+
 - (void)retainKey:(id)key withRetentionKey:(id)retentionKey {
     if (!key) return;
     NSParameterAssert(retentionKey != nil);
@@ -85,10 +105,10 @@
     return result;
 }
 
-- (void)releaseKey:(id)key withRetentionKey:(id)retentionKey {
+- (void)_releaseKey:(id)key withRetentionKey:(id)retentionKey lock:(BOOL)lock {
     if (!key) return;
     NSParameterAssert(retentionKey);
-    WILL_ACCESS_DATA;
+    if (lock) WILL_ACCESS_DATA;
     
     NSMutableSet *retentions = [_retentionKeys objectForKey:key];
     if (retentions.count > 0) {
@@ -100,7 +120,11 @@
             [_retainedPairs removeObjectForKey:key];
         }
     }
-    DID_ACCESS_DATA;
+    if (lock) DID_ACCESS_DATA;
+}
+
+- (void)releaseKey:(id)key withRetentionKey:(id)retentionKey {
+    [self _releaseKey:key withRetentionKey:retentionKey lock:YES];
 }
 
 @end

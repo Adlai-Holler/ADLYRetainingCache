@@ -130,4 +130,18 @@ static NSArray *releaseObjectsWordList;
     XCTAssertNotNil([c objectForKey:@"Hello"], @"");
 }
 
+- (void)testThatReleasingAllWithKeyWorks {
+    ADLYRetainingCache *c = [[ADLYRetainingCache alloc] init];
+    [c setObject:@"World" forKey:@"Hello"];
+    [c setObject:@"Object" forKey:@"Key"];
+    [c retainKey:@"Hello" withRetentionKey:@"RetainKey0"];
+    [c retainKey:@"Hello" withRetentionKey:@"RetainKey1"];
+    [c retainKey:@"Key" withRetentionKey:@"RetainKey0"];
+    [c releaseAllObjectsWithRetentionKey:@"RetainKey0"];
+    [c _simulateEvictionOfObjectForKey:@"Key"];
+    [c _simulateEvictionOfObjectForKey:@"Hello"];
+    XCTAssertNotNil([c objectForKey:@"Hello"], @"");
+    XCTAssertNil([c objectForKey:@"Key"], @"");
+}
+
 @end

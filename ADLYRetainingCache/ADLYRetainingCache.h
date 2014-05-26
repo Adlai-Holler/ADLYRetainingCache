@@ -14,8 +14,12 @@
 /** Removes all retention keys for key */
 - (void)forceReleaseKey:(id)key;
 
+/** If the key is not present, 0 is returned */
 - (NSInteger)retainCountForKey:(id)key;
 
+- (void)releaseAllObjectsWithRetentionKey:(id)key;
+
+- (void)releaseAllObjects;
 @end
 
 @interface ADLYRetainingCache (Testing)
