@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		40F997901933D921003F9B9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F9978F1933D921003F9B9F /* Foundation.framework */; };
+		40F9979E1933D921003F9B9F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F9979D1933D921003F9B9F /* XCTest.framework */; };
+		40F9979F1933D921003F9B9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F9978F1933D921003F9B9F /* Foundation.framework */; };
+		40F997A11933D921003F9B9F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F997A01933D921003F9B9F /* UIKit.framework */; };
+		40F997A41933D921003F9B9F /* libADLYRetainingCache.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F9978C1933D921003F9B9F /* libADLYRetainingCache.a */; };
+		40F997AA1933D921003F9B9F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 40F997A81933D921003F9B9F /* InfoPlist.strings */; };
+		40F997B71933D960003F9B9F /* ADLYRetainingCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F997B61933D960003F9B9F /* ADLYRetainingCache.m */; };
+		40F997B81933D960003F9B9F /* ADLYRetainingCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F997B61933D960003F9B9F /* ADLYRetainingCache.m */; };
+		40F997BA1933D96C003F9B9F /* ADLYRetainingCacheTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F997B91933D96C003F9B9F /* ADLYRetainingCacheTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		40F997A21933D921003F9B9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40F997841933D921003F9B9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40F9978B1933D921003F9B9F;
+			remoteInfo = ADLYRetainingCache;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		40F9978A1933D921003F9B9F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		40F9978C1933D921003F9B9F /* libADLYRetainingCache.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libADLYRetainingCache.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		40F9978F1933D921003F9B9F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		40F997931933D921003F9B9F /* ADLYRetainingCache-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ADLYRetainingCache-Prefix.pch"; sourceTree = "<group>"; };
+		40F9979C1933D921003F9B9F /* ADLYRetainingCacheTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ADLYRetainingCacheTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		40F9979D1933D921003F9B9F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		40F997A01933D921003F9B9F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		40F997A71933D921003F9B9F /* ADLYRetainingCacheTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ADLYRetainingCacheTests-Info.plist"; sourceTree = "<group>"; };
+		40F997A91933D921003F9B9F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		40F997B51933D960003F9B9F /* ADLYRetainingCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADLYRetainingCache.h; sourceTree = "<group>"; };
+		40F997B61933D960003F9B9F /* ADLYRetainingCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADLYRetainingCache.m; sourceTree = "<group>"; };
+		40F997B91933D96C003F9B9F /* ADLYRetainingCacheTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADLYRetainingCacheTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40F997891933D921003F9B9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40F997901933D921003F9B9F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40F997991933D921003F9B9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40F997A41933D921003F9B9F /* libADLYRetainingCache.a in Frameworks */,
+				40F9979E1933D921003F9B9F /* XCTest.framework in Frameworks */,
+				40F997A11933D921003F9B9F /* UIKit.framework in Frameworks */,
+				40F9979F1933D921003F9B9F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40F997831933D921003F9B9F = {
+			isa = PBXGroup;
+			children = (
+				40F997911933D921003F9B9F /* ADLYRetainingCache */,
+				40F997A51933D921003F9B9F /* ADLYRetainingCacheTests */,
+				40F9978E1933D921003F9B9F /* Frameworks */,
+				40F9978D1933D921003F9B9F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		40F9978D1933D921003F9B9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40F9978C1933D921003F9B9F /* libADLYRetainingCache.a */,
+				40F9979C1933D921003F9B9F /* ADLYRetainingCacheTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40F9978E1933D921003F9B9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40F9978F1933D921003F9B9F /* Foundation.framework */,
+				40F9979D1933D921003F9B9F /* XCTest.framework */,
+				40F997A01933D921003F9B9F /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		40F997911933D921003F9B9F /* ADLYRetainingCache */ = {
+			isa = PBXGroup;
+			children = (
+				40F997B51933D960003F9B9F /* ADLYRetainingCache.h */,
+				40F997B61933D960003F9B9F /* ADLYRetainingCache.m */,
+				40F997921933D921003F9B9F /* Supporting Files */,
+			);
+			path = ADLYRetainingCache;
+			sourceTree = "<group>";
+		};
+		40F997921933D921003F9B9F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				40F997931933D921003F9B9F /* ADLYRetainingCache-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		40F997A51933D921003F9B9F /* ADLYRetainingCacheTests */ = {
+			isa = PBXGroup;
+			children = (
+				40F997B91933D96C003F9B9F /* ADLYRetainingCacheTests.m */,
+				40F997A61933D921003F9B9F /* Supporting Files */,
+			);
+			path = ADLYRetainingCacheTests;
+			sourceTree = "<group>";
+		};
+		40F997A61933D921003F9B9F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				40F997A71933D921003F9B9F /* ADLYRetainingCacheTests-Info.plist */,
+				40F997A81933D921003F9B9F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		40F9978B1933D921003F9B9F /* ADLYRetainingCache */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40F997AF1933D921003F9B9F /* Build configuration list for PBXNativeTarget "ADLYRetainingCache" */;
+			buildPhases = (
+				40F997881933D921003F9B9F /* Sources */,
+				40F997891933D921003F9B9F /* Frameworks */,
+				40F9978A1933D921003F9B9F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ADLYRetainingCache;
+			productName = ADLYRetainingCache;
+			productReference = 40F9978C1933D921003F9B9F /* libADLYRetainingCache.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		40F9979B1933D921003F9B9F /* ADLYRetainingCacheTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40F997B21933D921003F9B9F /* Build configuration list for PBXNativeTarget "ADLYRetainingCacheTests" */;
+			buildPhases = (
+				40F997981933D921003F9B9F /* Sources */,
+				40F997991933D921003F9B9F /* Frameworks */,
+				40F9979A1933D921003F9B9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40F997A31933D921003F9B9F /* PBXTargetDependency */,
+			);
+			name = ADLYRetainingCacheTests;
+			productName = ADLYRetainingCacheTests;
+			productReference = 40F9979C1933D921003F9B9F /* ADLYRetainingCacheTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		40F997841933D921003F9B9F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Adly;
+			};
+			buildConfigurationList = 40F997871933D921003F9B9F /* Build configuration list for PBXProject "ADLYRetainingCache" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 40F997831933D921003F9B9F;
+			productRefGroup = 40F9978D1933D921003F9B9F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				40F9978B1933D921003F9B9F /* ADLYRetainingCache */,
+				40F9979B1933D921003F9B9F /* ADLYRetainingCacheTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		40F9979A1933D921003F9B9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40F997AA1933D921003F9B9F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		40F997881933D921003F9B9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40F997B71933D960003F9B9F /* ADLYRetainingCache.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40F997981933D921003F9B9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40F997BA1933D96C003F9B9F /* ADLYRetainingCacheTests.m in Sources */,
+				40F997B81933D960003F9B9F /* ADLYRetainingCache.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		40F997A31933D921003F9B9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40F9978B1933D921003F9B9F /* ADLYRetainingCache */;
+			targetProxy = 40F997A21933D921003F9B9F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		40F997A81933D921003F9B9F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40F997A91933D921003F9B9F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		40F997AD1933D921003F9B9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		40F997AE1933D921003F9B9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		40F997B01933D921003F9B9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/ADLYRetainingCache.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ADLYRetainingCache/ADLYRetainingCache-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		40F997B11933D921003F9B9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/ADLYRetainingCache.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ADLYRetainingCache/ADLYRetainingCache-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		40F997B31933D921003F9B9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ADLYRetainingCache/ADLYRetainingCache-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ADLYRetainingCacheTests/ADLYRetainingCacheTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		40F997B41933D921003F9B9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ADLYRetainingCache/ADLYRetainingCache-Prefix.pch";
+				INFOPLIST_FILE = "ADLYRetainingCacheTests/ADLYRetainingCacheTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40F997871933D921003F9B9F /* Build configuration list for PBXProject "ADLYRetainingCache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40F997AD1933D921003F9B9F /* Debug */,
+				40F997AE1933D921003F9B9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40F997AF1933D921003F9B9F /* Build configuration list for PBXNativeTarget "ADLYRetainingCache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40F997B01933D921003F9B9F /* Debug */,
+				40F997B11933D921003F9B9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40F997B21933D921003F9B9F /* Build configuration list for PBXNativeTarget "ADLYRetainingCacheTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40F997B31933D921003F9B9F /* Debug */,
+				40F997B41933D921003F9B9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 40F997841933D921003F9B9F /* Project object */;
+}
